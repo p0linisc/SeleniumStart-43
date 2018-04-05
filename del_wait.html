@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://open-eshop.stqa.ru/" />
+<title>del_coupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">del_coupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>q01n1s</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=tbody &gt; tr &gt; td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.sweet-alert button.confirm</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.table-responsive a.btn-danger.index-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td>!!!!!!локатор большого окна-фона за всплывшим!!!!!!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//body/div[3]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>exact:Are you sure you want to delete?</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=button.cancel</td>
+	<td>No way!</td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@style=&quot;display: block;&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//div[@class=&quot;sweet-alert showSweetAlert visible&quot;]//div[@style=&quot;display: none;&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.sweet-alert.showSweetAlert button.confirm</td>
+	<td>Yes, definitely!</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.hideSweetAlert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class=&quot;sweet-alert hideSweetAlert&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>exact:Title</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class=&quot;sweet-alert&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@class=&quot;sweet-alert&quot;]//button[2]</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@class=table-responsive]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@id='content']/div[2]/div/div/table.1.0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>q01n1s</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.table-responsive tbody.name</td>
+	<td>q01n1s</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@class='form-inline pull-right']//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotTable</td>
+	<td>//div[@id='content']//table.1.0</td>
+	<td>q01n1s</td>
+</tr>
+</tbody></table>
+</body>
+</html>
