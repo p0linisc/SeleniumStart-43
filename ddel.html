@@ -37,6 +37,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTable</td>
+	<td>//div[@id='content']//table.1.0</td>
+	<td>q01n1s</td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>css=i.glyphicon-trash</td>
 	<td></td>
@@ -47,49 +52,24 @@
 	<td>OK</td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>css=i.glyphicon.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=div.table-responsive a.btn-danger.index-delete</td>
 	<td></td>
 </tr>
 <tr>
-	<td></td>
-	<td>!!!!!!локатор большого окна-фона за всплывшим!!!!!!</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//body/div[3]/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.sweet-alert.showSweetAlert.visible</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.showSweetAlert.visible</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=h2</td>
-	<td>exact:Are you sure you want to delete?</td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>css=button.cancel</td>
-	<td>No way!</td>
-</tr>
-<tr>
 	<td>waitForAttribute</td>
-	<td>//div[@style=&quot;display: block;&quot;]</td>
-	<td></td>
+	<td>//div[@class='sweet-alert showSweetAlert visible']//div@style</td>
+	<td>display: none;</td>
 </tr>
 <tr>
-	<td>waitForAttribute</td>
-	<td>//div[@class=&quot;sweet-alert showSweetAlert visible&quot;]//div[@style=&quot;display: none;&quot;]</td>
-	<td></td>
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert button.confirm[style]</td>
+	<td>Yes, definitely!</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -112,19 +92,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=h2</td>
-	<td>exact:Title</td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@class=&quot;sweet-alert&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>//div[@class=&quot;sweet-alert&quot;]//button[2]</td>
-	<td>OK</td>
+	<td>//div[@class=&quot;sweet-alert&quot;]//button</td>
+	<td>Cancel</td>
+</tr>
+<tr>
+	<td>waitForNotAttribute</td>
+	<td>//div[@class=&quot;sweet-alert&quot;]//button@style</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>exact:Title</td>
 </tr>
 <tr>
 	<td>waitForElementNotPresent</td>
